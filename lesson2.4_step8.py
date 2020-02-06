@@ -22,9 +22,10 @@ try:
 	input1.send_keys(calc(browser.find_element_by_id("input_value").text))
 	button = browser.find_element_by_id("solve")
 	button.click()
-	time.sleep(3)
+	time.sleep(5)
 	alert = browser.switch_to.alert	
 	alert.accept()
+	
 finally:
 	time.sleep(3)
 	browser.quit()
